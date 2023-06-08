@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.4rem;
+    color: #fff;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
+    width: 100%;
+    height: 100%;
+}
+
+#app {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s linear;
+}
+
+.card {
+    min-width: 550px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    position: relative;
+    display: block;
+    border-radius: 14px;
+    max-height: 110px;
+    overflow: hidden;
+    transition: all 1s linear;
+    border: 3px solid rgb(10, 10, 158);
+}
+
+.card.active {
+    max-height: 100%;
+    transition: all 1s linear;
+}
+
+.nonValue {
+    text-align: center;
+    transition: all 1s linear;
+}
+
+.error {
+    text-align: center;
+    transition: all 1s linear;
+}
+
+
+#search {
+    border-radius: 18px;
+    width: 100%;
+    outline: none;
+    border: 3px solid rgb(10, 10, 158);
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    transition: all 1s linear;
+    padding: 15px 105px 15px 15px;
+    position: relative;
+}
+
+#search-btn {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    background: #1a068b;
+    outline: none;
+    right: 35px;
+    top: 35px;
+    color: #fff;
+    transition: all 1s linear;
+    font-weight: 700;
+    position: absolute;
+    cursor: pointer;
+    transition: all 1s linear;
+    padding: 14px 25px;
+}
+
+#search-btn:hover {
+    background: #110555;
+    transition: all 1s linear;
+}
+
+#card-result {
+    margin-top: 1.5rem;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #020024;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;
+}
+
+#card-result.active {
+    opacity: 1;
+    visibility: visible;
+    transition: all .5s ease;
+}
+
+.country-name {
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    transition: all 1s linear;
+    text-transform: uppercase;
+}
+
+.wrapper-tem {
+    display: flex;
+    align-items: center;
+    transition: all 1s linear;
+    flex-direction: column;
+}
+
+.wrapper-tem__info {
+    display: flex;
+    gap: 30px;
+}
+
+.wrapper-tem__info-max {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+.wrapper-tem__info-min {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
